@@ -1,0 +1,2 @@
+$var[user;$findUser[$message[2]]]
+$var[e_coin] **|** <@$authorID>, $if[$authorID==$var[user]]você$elseo usuário <@$var[user]>$endif possui **0 cristais**.  
