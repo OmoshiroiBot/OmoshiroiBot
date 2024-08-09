@@ -1,0 +1,12 @@
+# <:emoji_3:1271514018934292480> | Recompensas Diárias
+> - Colete todas as **`6` recompensas diárias** para receber um presente surpresa aleatório!
+> - Colete às **recompensas** todos os dia consecutivamente para receber **moedas bônus**!
+> - Resgate disponível todos os dias após `00:00` ( meia-noite ) 
+$if[] **-** `Dia 01` - **`500 moedas`**
+<:emoji_2:1271510936758386700> **-** `Dia 02` - **`1000 moedas`**
+<:emoji_1:1271510919876186152> **-** `Dia 03` - **`1500 moedas`**
+<:emoji_1:1271510919876186152> **-** `Dia 04` - **`2000 moedas`**
+<:emoji_1:1271510919876186152> **-** `Dia 05` - **`2500 moedas`**
+<:emoji_1:1271510919876186152> **-** `Dia 06` - **`3000 moedas`**
+<:emoji_1:1271510919876186152> **-** `Dia 07` - **`Surpresa`**
+> -# **[Recompensa Surpresa](https://cdn.discordapp.com/attachments/1270371272936652852/1271525262437253171/20240809_144716.jpg?ex=66b7a7ae&is=66b6562e&hm=a5ddca88458f969933d2a2441b4874c779d221a300640621241c0420ee19f421&)**: poderá receber 1 semana de Premium, 5k de moedas, 1 dia de Premium e 2x XP por 1 dia.
