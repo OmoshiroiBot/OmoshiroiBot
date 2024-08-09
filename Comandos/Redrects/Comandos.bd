@@ -1,0 +1,3 @@
+$if[$or[bal==$var[p];atm==$var[p];saldo==$var[p]]==true]
+
+$endif
