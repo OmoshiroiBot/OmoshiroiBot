@@ -1,3 +1,5 @@
 $if[$or[bal==$var[p];atm==$var[p];saldo==$var[p]]==true]
 https://raw.githubusercontent.com/OmoshiroiBot/OmoshiroiBot/main/Comandos/Economia/Bal.bs
+$elseif[$or[daily==$var[p];claim==$var[p];resgatar==$var[p]]==true]
+https://raw.githubusercontent.com/OmoshiroiBot/OmoshiroiBot/main/Comandos/Economia/Daily.bs
 $endif
