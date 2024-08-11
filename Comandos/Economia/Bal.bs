@@ -1,2 +1,4 @@
 $var[user;$findUser[$message[2]]]
-$var[e_coin] **|** <@$authorID>, $if[$authorID==$var[user]]você$elseo usuário <@$var[user]>$endif possui **0 cristais**.  
+$jsonParse[{$getVar[economy;$var[user]]}]
+
+$var[e_coin] **|** <@$authorID>, $if[$authorID==$var[user]]você$elseo usuário <@$var[user]>$endif possui **`$numberSeparator[$json[economy;coin]]` moedas** na carteira e **`$numberSeparator[$json[economy;banco]]` no banco**.  
