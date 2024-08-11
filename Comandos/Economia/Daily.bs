@@ -1,12 +1,20 @@
+$var[e_verify;<:emoji_2:1271510936758386700>]
+$var[e_coin;<:emoji_1:1271510919876186152>]
+$jsonParse[{$getVar[daily;$authorID]}]
+
 # <:emoji_3:1271514018934292480> | Recompensas Diárias
 > - Colete todas as **`6` recompensas diárias** para receber um presente surpresa aleatório!
 > - Colete às **recompensas** todos os dia consecutivamente para receber **moedas bônus**!
 > - Resgate disponível todos os dias após `00:00` ( meia-noite ) 
-$if[] **-** `Dia 01` - **`500 moedas`**
-<:emoji_2:1271510936758386700> **-** `Dia 02` - **`1000 moedas`**
-<:emoji_1:1271510919876186152> **-** `Dia 03` - **`1500 moedas`**
-<:emoji_1:1271510919876186152> **-** `Dia 04` - **`2000 moedas`**
-<:emoji_1:1271510919876186152> **-** `Dia 05` - **`2500 moedas`**
-<:emoji_1:1271510919876186152> **-** `Dia 06` - **`3000 moedas`**
-<:emoji_1:1271510919876186152> **-** `Dia 07` - **`Surpresa`**
-> -# **[Recompensa Surpresa](https://cdn.discordapp.com/attachments/1270371272936652852/1271525262437253171/20240809_144716.jpg?ex=66b7a7ae&is=66b6562e&hm=a5ddca88458f969933d2a2441b4874c779d221a300640621241c0420ee19f421&)**: poderá receber 1 semana de Premium, 5k de moedas, 1 dia de Premium e 2x XP por 1 dia.
+$if[$json[daily;dia]>=1]$var[e_verify]$elseif[$json[daily;dia]==0]$var[e_coin]$endif **-** `Dia 01` - **`500 moedas`**
+$if[$json[daily;dia]>=2]$var[e_verify]$elseif[$json[daily;dia]<=2]$var[e_coin]$endif **-** `Dia 02` - **`1000 moedas`**
+$if[$json[daily;dia]>=3]$var[e_verify]$elseif[$json[daily;dia]<=3]$var[e_coin]$endif **-** `Dia 03` - **`1500 moedas`**
+$if[$json[daily;dia]>=4]$var[e_verify]$elseif[$json[daily;dia]<=4]$var[e_coin]$endif **-** `Dia 04` - **`2000 moedas`**
+$if[$json[daily;dia]>=5]$var[e_verify]$elseif[$json[daily;dia]<=5]$var[e_coin]$endif **-** `Dia 05` - **`2500 moedas`**
+$if[$json[daily;dia]>=6]$var[e_verify]$elseif[$json[daily;dia]<=6]$var[e_coin]$endif **-** `Dia 06` - **`3000 moedas`**
+$if[$json[daily;dia]>=7]$var[e_verify]$elseif[$json[daily;dia]<=7]$var[e_coin]$endif **-** `Dia 07` - **`Surpresa`**
+> -# **Recompensa Surpresa**: poderá receber 1 semana de Premium, 5k de moedas, 1 dia de Premium e 2x XP por 1 dia.
+
+$var[x;$if[$json[daily;cd]>=$getTimestamp]yes$elseif[$json[daily;cd]<=$getTimestamp]no$endif]
+$var[z;$if[$json[daily;cd]>=$getTimestamp]Volte Amanhã$elseif[$json[daily;cd]<=$getTimestamp]Resgatar Recompensa$endif]
+$addButton[no;daily/$authorID;$var[z];primary;$var[x]]
