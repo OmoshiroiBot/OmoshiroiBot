@@ -1,5 +1,5 @@
-$var[e_verify;<:emoji_2:1271510936758386700>]
-$var[e_coin;<:emoji_1:1271510919876186152>]
+$var[e_verify;<:Omoshiroi_verify:1271510936758386700>]
+$var[e_coin;<:Omoshiroi_coin:1271466797496799325>]
 $jsonParse[{$getVar[daily;$authorID]}]
 
 # <:emoji_3:1271514018934292480> | Recompensas Diárias
