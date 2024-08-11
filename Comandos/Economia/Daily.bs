@@ -1,4 +1,4 @@
-$var[e_verify;<:Omoshiroi_verify:1271510936758386700>]
+$var[e_verify;<:Omoshiroi_verify:1271512582062080124>]
 $var[e_coin;<:Omoshiroi_coin:1271466797496799325>]
 $jsonParse[{$getVar[daily;$authorID]}]
 
